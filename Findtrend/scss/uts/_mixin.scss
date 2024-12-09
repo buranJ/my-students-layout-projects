@@ -1,0 +1,14 @@
+@mixin main-title($color) {
+  font-family: "Effra";
+  font-weight: 700;
+  font-size: 64px;
+  color: $color;
+}
+
+@mixin btn-black-hover {
+  background: #2b2b2b;
+}
+
+@mixin btn-green-hover {
+  background: #87d322;
+}

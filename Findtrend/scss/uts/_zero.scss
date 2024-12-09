@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&family=Roboto:wght@100;400&display=swap");
+@import url("https://fonts.cdnfonts.com/css/effra-heavy?styles=16535,16538,16540,16533");
+@import url("https://fonts.cdnfonts.com/css/good-dog?styles=1007");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Effra Heavy", sans-serif;
+  font-family: "Effra Light", sans-serif;
+  font-family: "Effra Medium", sans-serif;
+  font-family: "Effra", sans-serif;
+  font-family: "GoodDog Plain", sans-serif;
+}
+
+.big-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}

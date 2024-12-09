@@ -1,0 +1,140 @@
+.header {
+  background: #000;
+  background-image: url("../imgs/Ornament.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__logo {
+    img {
+      display: none;
+    }
+  }
+
+  &__content {
+    padding: 28px 0 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    &-links {
+      display: flex;
+      gap: 40px;
+
+      &-item {
+        a {
+          font-family: "Effra Light";
+          font-weight: 600;
+          font-size: 18px;
+          color: #fff;
+        }
+
+        a:hover {
+          color: #cfcfcf;
+        }
+      }
+    }
+  }
+
+  &__btns {
+    &-login {
+      cursor: pointer;
+      padding: 12px 40px;
+      border: 0;
+      background: transparent;
+      font-family: "Effra Light";
+      font-weight: 600;
+      font-size: 18px;
+      color: #fff;
+      transition: 0.5s ease-in;
+    }
+
+    &-register {
+      cursor: pointer;
+      border-radius: 40px;
+      padding: 11px 32px;
+      border: 0;
+      font-family: "Effra Light";
+      font-weight: 600;
+      font-size: 18px;
+      color: #000;
+      transition: 0.5s ease-out;
+    }
+  }
+
+  &__burger {
+    cursor: pointer;
+    z-index: 11111;
+    display: none;
+    position: relative;
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s ease-in;
+  }
+
+  &__burger::after {
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(-6px);
+    transition: 0.5s ease-in;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header {
+    &__content {
+      margin: 0 18px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .header {
+    &__nav {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    &__content {
+      padding: 24px 0px 18px;
+    }
+
+    &__btns {
+      display: none;
+    }
+
+    &__logo {
+      svg {
+        display: none;
+      }
+
+      img {
+        display: block;
+      }
+    }
+  }
+}
+
+.login-hover {
+  background: #fff;
+  color: #000;
+  border-radius: 40px;
+}
+
+.register-hover {
+  background: transparent;
+  color: #fff;
+}

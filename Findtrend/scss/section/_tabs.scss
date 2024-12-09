@@ -1,0 +1,217 @@
+.tabs {
+  background: $green;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 140px 0;
+  }
+
+  &__title {
+    font-family: "Effra";
+    font-weight: 700;
+    font-size: 72px;
+    text-align: center;
+    color: #000;
+  }
+
+  &__wrap {
+    display: flex;
+
+    &-info {
+      span {
+        display: block;
+        position: relative;
+        max-width: 85px;
+        font-family: "GoodDog Plain";
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+        color: #000;
+      }
+
+      ::before {
+        content: url("../imgs/arrow-black.svg");
+        position: absolute;
+      }
+    }
+
+    &-info:first-child {
+      padding: 104px 24.58px 0 0;
+
+      span {
+        transform: rotate(6deg);
+      }
+
+      ::before {
+        inset: -48px 0px 0px 70px;
+        transform: rotate(-72.06deg);
+      }
+    }
+
+    &-info:last-child {
+      padding: 50px 0 0 28px;
+
+      span {
+        transform: rotate(6deg);
+      }
+
+      ::before {
+        inset: 57px 0px 0px -7.1px;
+        transform: rotate(107.94deg);
+      }
+    }
+
+    &-bar {
+      background: #f5f5f5;
+      border-radius: 16px;
+      padding: 60px 80px;
+    }
+
+    &-banner {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 25.13px 28.81px 25.13px 41.68px;
+      background: #030303;
+      display: flex;
+      gap: 15.87px;
+
+      span {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 23px;
+        text-align: center;
+        color: #fff;
+      }
+
+      svg {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
+  &__description {
+    font-family: "Effra Light";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #000;
+    max-width: 666px;
+  }
+}
+
+@media (max-width: 900px) {
+  .tabs {
+    &__title {
+      font-size: 60px;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .tabs {
+    &__title {
+      font-size: 50px;
+    }
+
+    &__description {
+      max-width: 76%;
+    }
+
+    &__wrap {
+      position: relative;
+
+      &-info {
+        position: absolute;
+      }
+
+      &-info:first-child {
+        bottom: -50px;
+        padding: 0px;
+
+        span {
+          transform: rotate(2deg);
+        }
+
+        ::before {
+          inset: -82px 0px 0px 92px;
+          transform: rotate(-105deg);
+        }
+      }
+
+      &-info:last-child {
+        top: -50px;
+        right: 20px;
+        padding: 0px;
+
+        ::before {
+          content: url("../imgs/black-media-arrow.svg");
+          inset: 29px 0px 0px -67px;
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .tabs {
+    &__content {
+      padding: 80px 0px;
+    }
+
+    &__description {
+      margin-top: 35px;
+      font-size: 14px;
+    }
+
+    &__title {
+      text-wrap: nowrap;
+      font-size: 43px;
+    }
+    &__wrap {
+      margin: 0px 18px;
+      position: relative;
+
+      &-bar {
+        padding: 24px;
+      }
+
+      &-info {
+        position: absolute;
+      }
+
+      &-info:first-child {
+        bottom: -60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .tabs {
+    &__title {
+      font-size: 36px;
+    }
+    
+    &__wrap {
+      &-banner {
+        padding: 22px 21px 22px 33px;
+        gap: 10px;
+
+        span {
+          font-size: 20px;
+        }
+
+        svg {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
