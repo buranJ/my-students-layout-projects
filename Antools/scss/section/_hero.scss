@@ -1,0 +1,59 @@
+.hero {
+    margin-top: 150px;
+
+
+    &__title {
+        color: $title;
+        @include font(500, 50px);
+        max-width: 600px;
+
+    }
+
+    &__descriotion {
+        color: $description;
+        margin-top: 30px;
+        @include font(400, 18px);
+        max-width: 487px;
+    }
+
+    &__content {
+      display: flex;
+      
+    }
+    &__form {
+        margin-top: 60px;
+    }
+    &__input {
+        background: #283036;
+        @include font(400, 14px);
+        padding: 13px 111px 14px 13px;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+
+    }
+    &__btn {
+        background: $btn;
+        padding: 12px 36px;
+        border-radius: 8px;
+        @include font(600, 16px);
+        color: $title;
+        transition: 400ms ease-in-out;
+    }
+    &__btn:hover {
+        transform: scale(1.2);
+
+    }
+
+
+    &__label {
+        max-width: 497px;
+        background: #283036;
+        display: flex;
+        align-items: center;
+        padding: 8px 12px 8px 24px;
+        border-radius: 15px;   
+    
+    }
+
+}

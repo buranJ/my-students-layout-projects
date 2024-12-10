@@ -1,0 +1,120 @@
+.tools {
+    margin-top: 220px;
+
+    &__content {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    &__title {
+        @include font(500, 48px);
+        color: $title;
+    }
+
+    &__cards {
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        width: 48%;
+        border-radius: 15px;
+        backdrop-filter: blur(50px);
+        background: rgba(40, 48, 54, 0.6);
+    }
+
+    &__description {
+        @include font(500, 18px);
+        color: $description;
+        max-width: 427px;
+        margin-top: 30px;
+    }
+
+    &__btn {
+        @include font(500, 18px);
+        color: $title;
+        background-color: $btn;
+        padding: 16px 40px;
+        border-radius: 8px;
+        margin-top: 60px;
+    }
+
+    &__wrap {
+        padding: 28px 21px 28px 22px;
+
+        &-header {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        &-title {
+            @include font(500, 24px);
+            color: $title;
+        }
+
+        &-gold {
+            margin-top: 3px;
+            @include font(400, 18px);
+            color: rgba(255, 165, 55, 0.55);
+        }
+
+        &-description {
+            margin-top: 60px;
+            @include font(400, 14px);
+            color: $description;
+            max-width: 245px;
+        }
+
+        &-footer {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            gap: 43px;
+        }
+
+        &-icons {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        &-btn {
+            @include font(600, 16px);
+            color: $title;
+            background-color: $btn;
+            padding: 9px 35px;
+            border-radius: 8px;
+        }
+    }
+}
+
+@media(max-width:900px) {
+    .tools{
+        &__content {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__cards{
+            margin-top: 50px;
+        }
+        &__btn{
+            width: 100%;
+        }
+    }
+   
+    
+}
+@media(max-width:630px) {
+    .tools{
+        &__card{
+            display: flex;
+            justify-content: center;
+            width: 98%;
+        }
+    }
+}
