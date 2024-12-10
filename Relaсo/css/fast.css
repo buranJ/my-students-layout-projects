@@ -1,0 +1,115 @@
+
+.fast {
+    margin-top: 128px;
+}
+
+.fast__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.fast__btn {
+    border: 0;
+    padding: 4px 12px;
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    border-radius: 32px;
+    background: #E7E8E3;
+}
+
+.fast__title {
+    margin-top: 25px;
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57.6px;
+}
+
+.fast__description {
+    margin-top: 29px;
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.fast__wrap {
+    margin-top: 37px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+}
+
+.fast__title-sub {
+    margin-top: 16px;
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.fast__description-sub {
+    margin-top: 18px;
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.fast__btns {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.fast__btn-1 {
+    padding: 13px 25px;
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 6px;
+    border: 1px solid #E7E8E3;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.fast__btn-2 {
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border: 0;
+    background: none;
+}
+.fast__btn-2:hover{
+    gap: 30px;
+}

@@ -1,0 +1,25 @@
+.logo {
+    margin-top: 64px;
+}
+
+.logo__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__imgs {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.logo__description {
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 243px;
+}

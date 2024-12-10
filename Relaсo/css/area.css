@@ -1,0 +1,141 @@
+.area {
+    margin-top: 128px;
+
+}
+
+.area__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area__btn {
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    border-radius: 32px;
+    background: #E7E8E3;
+    padding: 4px 12px;
+}
+
+.area__title {
+    margin-top: 25px;
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57.6px;
+}
+
+.area__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 31px;
+}
+
+.area__card {
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.area__card img {
+    border-radius: 20px;
+}
+
+.area__text {
+    padding: 24px;
+}
+
+.area__title-sub {
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33.6px;
+}
+
+.area__title-sup {
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.area__adress {
+    margin-top: 16px;
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.area__bottom {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.area__item {
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.area__btns {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.area__btns-btn {
+    padding: 13px 25px;
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 6px;
+    border: 1px solid #E7E8E3;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+.area__link {
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+}
